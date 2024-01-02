@@ -2,138 +2,6 @@ import React, { Component } from 'react'
 import NewsItem from './NewsItem'
 
 export default class News extends Component {
-   /*articles=[
-    {
-    "source": {
-    "id": "bbc-news",
-    "name": "BBC News"
-    },
-    "author": "BBC News",
-    "title": "Paula Abdul sues Nigel Lythgoe over alleged sexual assault",
-    "description": "The American singer alleges multiple instances of assault while the pair worked together, which Mr Lythgoe denies.",
-    "url": "https://www.bbc.co.uk/news/world-67848608",
-    "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/13215/production/_132175387_gettyimages-1467470338.jpg",
-    "publishedAt": "2023-12-31T13:52:16.2971657Z",
-    "content": "American singer and dancer Paula Abdul is suing British television executive heavyweight Nigel Lythgoe over alleged sexual assault.\r\nMs Abdul's lawsuit claims multiple instances of assault while the … [+2224 chars]"
-    },
-    {
-    "source": {
-    "id": "bbc-news",
-    "name": "BBC News"
-    },
-    "author": "BBC News",
-    "title": "John Pilger: Campaigning Australian journalist dies",
-    "description": "Throughout his career, the writer was a vocal critic of Western foreign policy.",
-    "url": "https://www.bbc.co.uk/news/world-australia-67853392",
-    "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/C3B1/production/_132179005_gettyimages-463217765.jpg",
-    "publishedAt": "2023-12-31T13:07:13.8289758Z",
-    "content": "Campaigning Australian journalist and filmmaker John Pilger has died aged 84, his family have announced. \r\nA statement released by his family on X, formerly Twitter, said he died on Saturday in Londo… [+237 chars]"
-    },
-    {
-    "source": {
-    "id": "bbc-news",
-    "name": "BBC News"
-    },
-    "author": "BBC News",
-    "title": "DR Congo election: Results due with President Felix Tshisekedi leading",
-    "description": "The full results of DR Congo's elections are expected, with President Tshisekedi enjoying a huge lead.",
-    "url": "https://www.bbc.co.uk/news/world-africa-67850563",
-    "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/C857/production/_132178215_congogetty.jpg",
-    "publishedAt": "2023-12-31T10:37:14.1271353Z",
-    "content": "The full results of Democratic Republic of Congo's election are expected shortly, with President Félix Tshisekedi enjoying a commanding lead over opposition candidates who have demanded a rerun.\r\nPre… [+2622 chars]"
-    },
-    {
-    "source": {
-    "id": "bbc-news",
-    "name": "BBC News"
-    },
-    "author": "BBC News",
-    "title": "New Year celebrations live: World prepares to ring in 2024 with spectacular celebrations",
-    "description": "As the new year sweeps across the globe, cities prepare to mark it with spectacular fireworks and light displays.",
-    "url": "https://www.bbc.co.uk/news/live/world-67835121",
-    "urlToImage": "https://m.files.bbci.co.uk/modules/bbc-morph-news-waf-page-meta/5.3.0/bbc_news_logo.png",
-    "publishedAt": "2023-12-31T09:22:20.6100157Z",
-    "content": "Yes, there are 26 hours between the first place to welcome in the new year and the last. Its all because of the international date line, which is the start and end point of each day. \r\nKiribati, a co… [+938 chars]"
-    },
-    {
-    "source": {
-    "id": "bbc-news",
-    "name": "BBC News"
-    },
-    "author": "BBC News",
-    "title": "US warship in Red Sea shoots down two Houthi missiles from Yemen",
-    "description": "Two destroyers responded to a distress call from a Danish ship hit by a missile from Yemen, US says.",
-    "url": "https://www.bbc.co.uk/news/world-middle-east-67851897",
-    "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/89D7/production/_132178253_231205-n-jc256-1580.jpg",
-    "publishedAt": "2023-12-31T09:07:10.9230139Z",
-    "content": "A US warship has shot down two missiles fired from Yemen, after responding to a call for aid from a container ship that had been struck in the Red Sea.\r\nThe anti-ship missiles were fired from Houthi-… [+3231 chars]"
-    },
-    {
-    "source": {
-    "id": "bbc-news",
-    "name": "BBC News"
-    },
-    "author": "BBC News",
-    "title": "Vogue model Ellie Goldstein: 'Doctors said I wouldn't walk or talk'",
-    "description": "Model Ellie Goldstein, who has Down's syndrome, says people should never give up on their dreams.",
-    "url": "https://www.bbc.co.uk/news/uk-england-essex-67613146",
-    "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/166AF/production/_131932819_14ec60e5773bef1796d36c3026901f9a9eb95fb9800_434_3677_20683677x2068.jpg",
-    "publishedAt": "2023-12-31T08:07:17.5816152Z",
-    "content": "When Ellie Goldstein was born in December 2001, doctors said she would never be able to walk or talk due to having Down's syndrome. \r\nShe soon proved them wrong. Ellie went on to make history as the … [+6259 chars]"
-    },
-    {
-    "source": {
-    "id": "bbc-news",
-    "name": "BBC News"
-    },
-    "author": "BBC News",
-    "title": "Ukraine war: Russia launches fresh drone assault on Kyiv and Kharkiv, officials say",
-    "description": "The latest attacks on Kyiv and Kharkiv come after two days of major aerial assaults by both sides.",
-    "url": "https://www.bbc.co.uk/news/world-europe-67851431",
-    "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/7839/production/_132177703_mediaitem132177702.jpg",
-    "publishedAt": "2023-12-31T03:52:15.1439599Z",
-    "content": "Ukraine is again under attack by Russian drones, officials say, after two days of major aerial assaults by both sides.\r\nThere are reports of explosions in Kyiv and Kharkiv, where the mayor said resid… [+2550 chars]"
-    },
-    {
-    "source": {
-    "id": "bbc-news",
-    "name": "BBC News"
-    },
-    "author": "BBC News",
-    "title": "Venice to ban large tourist groups and loudspeakers",
-    "description": "The new rules will come into effect in June and are part of an effort to ease the impact of tourism.",
-    "url": "https://www.bbc.co.uk/news/world-europe-67851201",
-    "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/1102D/production/_132177696_mediaitem132177650.jpg",
-    "publishedAt": "2023-12-31T01:22:16.9878897Z",
-    "content": "Venice is to ban loudspeakers and tourist groups of more than 25 people, in a bid to ease the impact of mass tourism on the Italian city.\r\nThe new rules will come into effect from June, the city said… [+1232 chars]"
-    },
-    {
-    "source": {
-    "id": "bbc-news",
-    "name": "BBC News"
-    },
-    "author": "BBC News",
-    "title": "Bangladesh sees dramatic rise in lightning deaths linked to climate change",
-    "description": "Reported deaths and injuries due to lightning have risen dramatically in Bangladesh.",
-    "url": "https://www.bbc.co.uk/news/world-asia-67779223",
-    "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/445E/production/_132120571_mamun2.jpg",
-    "publishedAt": "2023-12-31T00:37:17.4887361Z",
-    "content": "On the day he thought he'd be celebrating his wedding, Mamun buried 16 of his relatives.\r\nThey had been killed by lightning on the way to the ceremony.\r\nDressed in their finest saris and suits, his f… [+6408 chars]"
-    },
-    {
-    "source": {
-    "id": "bbc-news",
-    "name": "BBC News"
-    },
-    "author": "BBC News",
-    "title": "Inside Russia as war grinds into new year",
-    "description": "The BBC's Steve Rosenberg looks at life in a town near Moscow, and asks residents about the war.",
-    "url": "https://www.bbc.co.uk/news/world-europe-67843830",
-    "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/141B/production/_132174150_p0h24q2h.jpg",
-    "publishedAt": "2023-12-31T00:22:17.7846917Z",
-    "content": "As the world enters a new year, the war in Ukraine also grinds into another year.\r\nMany Russians are still willing to believe the Kremlins narrative that the West is to blame for the war - but what a… [+154 chars]"
-    }
-    ]*/
   constructor(){
     super();
     this.state={
@@ -150,6 +18,7 @@ fetch(url).then((res)=>res.json()).then((json)=>{
   });
 });
      }
+
   render() {
     const {loading , articles}=this.state;
     if(!loading)
@@ -170,8 +39,11 @@ fetch(url).then((res)=>res.json()).then((json)=>{
     
     </ol></div>
   })}
-   
-      </div>
+   </div>
+   <div className='container d-flex justify-content-between'>
+   <button type="button" class="btn btn-primary" onClick={this.handlePreviousClick}>&larr; Previous</button>
+   <button type="button" class="btn btn-primary" onClick={this.handleNextClick}> Next &rarr;</button>
+   </div>
      
    </>
     )
